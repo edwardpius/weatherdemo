@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/home/centos/venvs/weather/bin/python
 
 import os
 import requests
@@ -43,7 +43,7 @@ weather_description = z[0]["description"]
 print(" Temperature (in Kelvin) = " +
         str(current_temperature) +
         "\n Temperature (in Celsius) = " +
-        str(pytemperature.k2c(current_temperature)) +
+        str(round(pytemperature.k2c(current_temperature), 2)) +
         "\n Temperature (in Farenheit) = " +
         str(pytemperature.k2f(current_temperature)) +
         "\n Atmospheric pressure (in hPa unit) = " +
