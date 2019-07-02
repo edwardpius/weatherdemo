@@ -8,10 +8,9 @@ import pytemperature
 
 from argparse import ArgumentParser
 
-parser = ArgumentParser(description='Get the current weather information for your zipcode')
-##parser.add_argument('zip', help='zip/postal code to get weather for')
+parser = ArgumentParser(description='Get the current weather information for your city')
 parser.add_argument('city', help='city to get weather for')
-parser.add_argument('--country', default='us', help='country zip/postal belongs to, default is "us"')
+parser.add_argument('--country', default='us', help='country city belongs to, default is "us"')
 
 args = parser.parse_args()
 
